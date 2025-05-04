@@ -19,7 +19,7 @@ func (s *Stack) Pop() {
 	s.Items = s.Items[:len(s.Items)-1]
 }
 
-func(s *Stack) Top() (T, error) {
+func(s *Stack) Top() (int, error) {
 	if s.IsEmpty() {
 		return 0, fmt.Errorf("stack is empty")
 	}
